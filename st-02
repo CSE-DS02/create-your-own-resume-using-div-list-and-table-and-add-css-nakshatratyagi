@@ -12,13 +12,13 @@
             margin:0 auto;   
         }
         h1{
-            font-family:'Courier New', Courier, monospace;
+            font:arial;
             align-content:center;
             text-align:center;
         }
         button{
             background-color:aqua;
-            font-family: 'Times New Roman', Times, serif;
+            font-family:Times New Roman;
             border-radius: 10px;
         }
         img{
