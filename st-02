@@ -1,11 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce product card</title>
     <style>
         .product_card{
             background-color: aliceblue;
             align-items:center;
-            width:500px;
+            max-width:90%;
             height:500px;
             border-radius:10px;
             text-align: center;
@@ -18,12 +21,12 @@
         }
         button{
             background-color:aqua;
-            font-family:Times New Roman;
+            font-family: 'Times New Roman';
             border-radius: 10px;
         }
         img{
-            height: 300px;
-            width:300px;
+            height: auto;
+            width:30%;
         }
         .product_title{
             font-size: large;
@@ -32,6 +35,17 @@
         P{
             margin: 20px;
         }
+        @media (max-width: 600px) and (min-width:300px) {
+        .product_card {
+        width: 90%;
+        padding: 10px;
+        }
+
+        .product_title {
+        font-size: medium;
+        }
+}
+
     </style>
 </head>
 <body>
