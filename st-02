@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>E-commerce product card</title>
+    <style>
+        .product_card{
+            background-color: aliceblue;
+            align-items:center;
+            width:500px;
+            height:500px;
+            border-radius:10px;
+            text-align: center;
+            margin:0 auto;   
+        }
+        h1{
+            font-family:'Courier New', Courier, monospace;
+            align-content:center;
+            text-align:center;
+        }
+        button{
+            background-color:aqua;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 10px;
+        }
+        img{
+            height: 300px;
+            width:300px;
+        }
+        .product_title{
+            font-size: large;
+            font-weight: 1000;
+        }
+        P{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div><h1>shop easy</h1></div>
+    <div class="product_card">
+        
+        <img src="https://cdn.shopify.com/s/files/1/0017/8166/1761/files/ChrisCrossNavyBlueCottonT-Shirt.jpg?v=1740994598&width=2048" alt="product image">
+        <div class="product_title">COTTON SHIRT</div>
+        <p>price-$400</p>
+        <button>ADD TO CART</button>
+        <p>breatheable and comfortable material. made out of cotton,very good feel. best for price </p>
+    </div>
+    
+</body>
+</html>
