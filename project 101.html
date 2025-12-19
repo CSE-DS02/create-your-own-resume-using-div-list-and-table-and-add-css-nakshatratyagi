@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Paytm Clone</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f6f8fb;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.navbar{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    flex-wrap:wrap;
+}
+
+.logo{
+    height:30px;
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.menu a{
+    font-size:14px;
+}
+
+.signin{
+    background:#00baf2;
+    color:white;
+    padding:8px 14px;
+    border-radius:20px;
+}
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    top:25px;
+    background:white;
+    min-width:180px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    border-radius:6px;
+}
+
+.dropdown-content a{
+    display:block;
+    padding:10px;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.banner{
+    margin:20px;
+}
+
+.banner img{
+    width:100%;
+    border-radius:10px;
+}
+
+.recharge-wrapper{
+    display:flex;
+    gap:30px;
+    margin:20px;
+}
+
+.recharge-box{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    flex:1;
+}
+
+.image-box{
+    border-radius:12px;
+    overflow:hidden;
+    flex:1;
+}
+
+.image-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.icons{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.icon-box{
+    width:120px;
+    text-align:center;
+}
+
+.icon{
+    width:60px;
+    height:60px;
+    background:#e6f6ff;
+    border-radius:50%;
+    margin:auto;
+    line-height:60px;
+    font-size:24px;
+}
+
+.promo{
+    display:flex;
+    gap:20px;
+    margin:20px;
+}
+
+.promo div{
+    flex:1;
+    padding:20px;
+    border-radius:12px;
+    color:white;
+}
+
+.blue{ background:#00baf2; }
+.dark{ background:#0a2f6b; }
+
+.promo2{
+    display:flex;
+    gap:20px;
+    margin:20px;
+}
+
+.promote img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:16px;
+}
+
+.travel{
+    background:#e8f8ff;
+    padding:25px;
+    margin:20px;
+    border-radius:12px;
+}
+
+.travel-tabs{
+    display:flex;
+    gap:30px;
+    font-weight:bold;
+    flex-wrap:wrap;
+}
+
+.single-image{
+    max-width:900px;
+    margin:20px auto;
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+}
+
+.single-image img{
+    width:100%;
+    max-height:280px;
+    object-fit:contain;
+}
+
+.two-images{
+    max-width:900px;
+    margin:20px auto;
+    display:flex;
+    gap:20px;
+}
+
+.img-box{
+    flex:1;
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+}
+
+.img-box img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+footer{
+    background:white;
+    margin-top:40px;
+    padding:30px 40px;
+}
+
+.footer-item{
+    border-bottom:1px solid #ddd;
+    padding:12px 0;
+    font-size:14px;
+}
+
+.copy{
+    text-align:center;
+    margin-top:20px;
+    font-size:13px;
+}
+
+@media(max-width:900px){
+    .recharge-wrapper,
+    .promo,
+    .promo2,
+    .two-images{
+        flex-direction:column;
+    }
+
+    .menu{
+        justify-content:center;
+    }
+
+    .icon-box{
+        width:100px;
+    }
+}
+
+@media(max-width:600px){
+    .navbar{
+        padding:15px;
+    }
+
+    .menu{
+        width:100%;
+        justify-content:space-between;
+    }
+
+    .icons{
+        justify-content:center;
+    }
+
+    .travel-tabs{
+        gap:15px;
+        font-size:14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="#"><img src="paytm.svg" class="logo"></a>
+    <div class="menu">
+        <div class="dropdown">
+            <a href="#">Recharge & Bills ▾</a>
+            <div class="dropdown-content">
+                <a href="#">Mobile</a>
+                <a href="#">DTH</a>
+                <a href="#">Electricity</a>
+                <a href="#">FASTag</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Ticket Booking ▾</a>
+            <div class="dropdown-content">
+                <a href="#">Flights</a>
+                <a href="#">Bus</a>
+                <a href="#">Trains</a>
+            </div>
+        </div>
+        <a href="#">Payments</a>
+        <a href="#">Business</a>
+        <a href="#" class="signin">Sign In</a>
+    </div>
+</div>
+
+<div class="banner">
+    <img src="img2.avif">
+</div>
+
+<div class="recharge-wrapper">
+    <div class="recharge-box">
+        <h2>Recharges & Bill Payments</h2>
+        <div class="icons">
+            <div class="icon-box"><div class="icon">📱</div>Mobile</div>
+            <div class="icon-box"><div class="icon">📺</div>DTH</div>
+            <div class="icon-box"><div class="icon">🚗</div>FASTag</div>
+            <div class="icon-box"><div class="icon">💡</div>Electricity</div>
+            <div class="icon-box"><div class="icon">💳</div>Loan EMI</div>
+            <div class="icon-box"><div class="icon">➕</div>View All</div>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="img3.avif">
+    </div>
+</div>
+
+<div class="promo">
+    <div class="blue">
+        <h3>Mobile Recharge Cashback</h3>
+        <p>Recharge now & win ₹100</p>
+    </div>
+    <div class="dark">
+        <h3>Broadband Recharge</h3>
+        <p>Pay now & get rewards</p>
+    </div>
+</div>
+
+<div class="promo2">
+    <div class="promote"><img src="imgp1.avif"></div>
+    <div class="promote"><img src="imgp2.avif"></div>
+    <div class="promote"><img src="imgp3.avif"></div>
+</div>
+
+<div class="travel">
+    <div class="travel-tabs">
+        <span>Flights</span>
+        <span>Bus</span>
+        <span>Trains</span>
+        <span>Intl Flights</span>
+    </div>
+    <p style="margin-top:15px;">Book tickets easily with Paytm Travel</p>
+</div>
+
+<div class="single-image">
+    <img src="patym1.avif">
+</div>
+
+<div class="two-images">
+    <div class="img-box"><img src="paytm2.avif"></div>
+    <div class="img-box"><img src="paytm3.avif"></div>
+</div>
+
+<div class="single-image">
+    <img src="paytm4.avif">
+</div>
+
+<div class="single-image">
+    <img src="paytm5.avif">
+</div>
+
+<footer>
+    <div class="footer-item">+ Investor Relations</div>
+    <div class="footer-item">+ Company</div>
+    <div class="footer-item">+ Recharge & Pay Bills</div>
+    <div class="footer-item">+ Book Travel & Entertainment</div>
+    <div class="footer-item">+ Loans & Credit Cards</div>
+    <div class="copy">© 2025 Paytm</div>
+</footer>
+
+</body>
+</html>
